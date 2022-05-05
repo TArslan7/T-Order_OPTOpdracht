@@ -1,6 +1,6 @@
 package com;
 
-public class Drank extends Gerecht{
+public class Drank extends Voorgerecht {
     private String drankjesLijst;
 
     public void addDrankjesLijst(){

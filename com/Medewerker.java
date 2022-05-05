@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Medewerker {
     private String voornaam;
     private String achternaam;
-    private static Integer medewerkerCode=100;
+    private static Integer medewerkersCode=000;
 
     public String getVoornaam(){
         return voornaam;
@@ -24,9 +24,9 @@ public class Medewerker {
         achternaam=scanner.nextLine();
     }
     public static Integer volgendeMedewerkerCode(){
-        return medewerkerCode++;
+        return medewerkersCode++;
     }
     public Integer getMedewerkerCode(){
-        return medewerkerCode;
+        return medewerkersCode;
     }
 }
