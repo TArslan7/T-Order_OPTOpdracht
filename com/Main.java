@@ -11,8 +11,10 @@ public class Main {
         try {
 
             while (true) {
-                klantMedewerkerEigenaar();
+                klantMedewerkerEigenaarKeuzeTekst();
+                System.out.print("Voer uw keuze in: ");
                 int  keuze1 = scanner.nextInt();
+                System.out.println();
 
                 if (keuze1==0) {
                     System.out.println("U bent een klant!");
@@ -20,6 +22,9 @@ public class Main {
                     System.out.println("U bent een medewerker!");
                 } else if (keuze1==2) {
                     System.out.println("U bent de eigenaar!");
+                }else if (keuze1==3){
+                    System.out.println("Einde programma!");
+                    System.exit(1);
                 }
             }
 
@@ -45,7 +50,12 @@ public class Main {
 
     }
 
-    public static void klantMedewerkerEigenaar() {
-        System.out.println("\nHallo!\nBent u een klant toets dan een (0).\nBent u een medewerker, toets dan een (1).\nBent u de eigenaar, toets  dan een (2)!\nVoer uw keuze in:");
+    public static void klantMedewerkerEigenaarKeuzeTekst() {
+        System.out.println("----------"+
+                "\nBent u een klant toets dan een (0)." +
+                "\nBent u een medewerker, toets dan een (1)." +
+                "\nBent u de eigenaar, toets  dan een (2)." +
+                "\nVoer een (3) in om dit programma af te sluiten."+
+                "\n----------");
     }
 }
