@@ -1,3 +1,5 @@
+package com;
+
 public class Drank extends Gerecht{
     private String drankjesLijst;
 

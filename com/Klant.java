@@ -1,10 +1,15 @@
+package com;
+
 import java.util.Scanner;
 
-public class Medewerker {
+public class Klant {
     private String voornaam;
     private String achternaam;
-    private static Integer medewerkerCode=100;
 
+    Klant(String voornaam, String achternaam){
+        this.voornaam=voornaam;
+        this.achternaam=achternaam;
+    }
     public String getVoornaam(){
         return voornaam;
     }
@@ -13,7 +18,7 @@ public class Medewerker {
         System.out.println("Wat is uw voornaam?");
         voornaam=scanner.nextLine();
     }
-    public String getAchternaam(){
+    public String getAchernaam(){
         return achternaam;
     }
     public void addAchternaam(){
@@ -21,10 +26,5 @@ public class Medewerker {
         System.out.println("Wat is uw achternaam?");
         achternaam=scanner.nextLine();
     }
-    public static Integer volgendeMedewerkerCode(){
-        return medewerkerCode++;
-    }
-    public Integer getMedewerkerCode(){
-        return medewerkerCode;
-    }
+
 }

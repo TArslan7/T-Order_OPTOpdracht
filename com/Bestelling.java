@@ -1,3 +1,5 @@
+package com;
+
 public class Bestelling {
     private static Integer bestelnummer=0;
 

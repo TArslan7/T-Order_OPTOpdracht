@@ -1,3 +1,5 @@
+package com;
+
 public class Ondernemer {
     private final String voornaam="Tolga";
     private final String achternaam="Achternaam";
